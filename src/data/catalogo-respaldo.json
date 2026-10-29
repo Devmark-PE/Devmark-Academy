@@ -1,0 +1,1795 @@
+{
+ "cursos": [
+  {
+   "slug": "ia-para-tu-trabajo",
+   "nombre": "IA para tu trabajo",
+   "resumen": "ChatGPT, Claude y Gemini para correos, informes, reuniones e investigación, con prompts que funcionan.",
+   "descripcion": "El curso más pedido del mercado, hecho práctico: cada clase resuelve tareas reales de oficina con inteligencia artificial.\n\nAprendes a escribir instrucciones que funcionan, a revisar lo que la IA entrega y a armar tu propio kit de prompts para tu puesto.",
+   "publico": "ADULTOS",
+   "tema": "IA",
+   "edadMin": 18,
+   "edadMax": null,
+   "nivel": "Desde cero",
+   "clases": 8,
+   "minutosPorClase": 120,
+   "temario": [
+    {
+     "temas": [
+      "Cómo funciona un modelo de lenguaje",
+      "ChatGPT, Claude y Gemini"
+     ],
+     "titulo": "Fundamentos"
+    },
+    {
+     "temas": [
+      "Contexto, rol y formato",
+      "Mejorar las respuestas"
+     ],
+     "titulo": "Prompts que funcionan"
+    },
+    {
+     "temas": [
+      "Correos y documentos",
+      "Informes"
+     ],
+     "titulo": "Escribir"
+    },
+    {
+     "temas": [
+      "Resumir y comparar",
+      "Investigar"
+     ],
+     "titulo": "Analizar"
+    },
+    {
+     "temas": [
+      "Plantillas para mi puesto",
+      "Buenas prácticas y privacidad"
+     ],
+     "titulo": "Mi kit"
+    }
+   ],
+   "aprendizajes": [
+    "Prompts claros y reutilizables",
+    "Correos, informes y documentos en minutos",
+    "Resumir reuniones y documentos largos",
+    "Investigar y analizar información con IA",
+    "Usar la IA con criterio: datos, privacidad y errores"
+   ],
+   "proyectoFinal": "Tu kit de prompts y flujos de trabajo para tu propio puesto.",
+   "requisitos": "Una computadora con internet, cámara y micrófono. No se necesita experiencia previa.",
+   "imagen": null,
+   "linea": null,
+   "destacado": true,
+   "orden": 1,
+   "grupos": [
+    {
+     "id": "respaldo-ia-para-tu-trabajo-1",
+     "ciclo": "Verano 2027 · Ciclo 1",
+     "inicio": "2027-01-05",
+     "fin": "2027-01-28",
+     "dias": [
+      "MAR",
+      "JUE"
+     ],
+     "horaInicio": "19:30",
+     "horaFin": "21:30",
+     "docente": null,
+     "cupoMaximo": 20,
+     "cuposLibres": 20,
+     "estado": "ABIERTO",
+     "aceptaInscripciones": true,
+     "plan": {
+      "moneda": "PEN",
+      "matricula": 50,
+      "cuotas": [
+       {
+        "monto": 200,
+        "vence": "2027-01-05"
+       },
+       {
+        "monto": 200,
+        "vence": "2027-01-16"
+       }
+      ],
+      "pagoCompleto": 405
+     }
+    },
+    {
+     "id": "respaldo-ia-para-tu-trabajo-2",
+     "ciclo": "Verano 2027 · Ciclo 3",
+     "inicio": "2027-03-02",
+     "fin": "2027-03-25",
+     "dias": [
+      "MAR",
+      "JUE"
+     ],
+     "horaInicio": "19:30",
+     "horaFin": "21:30",
+     "docente": null,
+     "cupoMaximo": 20,
+     "cuposLibres": 20,
+     "estado": "ABIERTO",
+     "aceptaInscripciones": true,
+     "plan": {
+      "moneda": "PEN",
+      "matricula": 50,
+      "cuotas": [
+       {
+        "monto": 200,
+        "vence": "2027-03-02"
+       },
+       {
+        "monto": 200,
+        "vence": "2027-03-13"
+       }
+      ],
+      "pagoCompleto": 405
+     }
+    }
+   ]
+  },
+  {
+   "slug": "mi-primera-aventura-con-ia",
+   "nombre": "Mi primera aventura con IA",
+   "resumen": "Los niños crean un cuento ilustrado y una canción con inteligencia artificial, y aprenden a usarla con cuidado.",
+   "descripcion": "Un primer contacto con la inteligencia artificial pensado para niños: juegan, crean y entienden qué es (y qué no es) una IA.\n\nCada clase termina con algo hecho por ellos, y aprenden las reglas para usarla de forma segura: qué datos no se comparten, cómo saber si algo es real y por qué la IA ayuda pero no piensa por nosotros.",
+   "publico": "NINOS",
+   "tema": "IA",
+   "edadMin": 8,
+   "edadMax": 10,
+   "nivel": "Desde cero",
+   "clases": 8,
+   "minutosPorClase": 75,
+   "temario": [
+    {
+     "temas": [
+      "La IA a nuestro alrededor",
+      "Qué sabe y qué no sabe una IA"
+     ],
+     "titulo": "¿Qué es la IA?"
+    },
+    {
+     "temas": [
+      "Instrucciones claras",
+      "Pedir, revisar y mejorar"
+     ],
+     "titulo": "Hablar con la IA"
+    },
+    {
+     "temas": [
+      "Personajes y escenas",
+      "Imágenes con IA"
+     ],
+     "titulo": "Mi cuento ilustrado"
+    },
+    {
+     "temas": [
+      "Letra y ritmo",
+      "Música con IA"
+     ],
+     "titulo": "Mi canción"
+    },
+    {
+     "temas": [
+      "Datos que no se comparten",
+      "¿Es real o es IA?"
+     ],
+     "titulo": "Usar la IA con cuidado"
+    }
+   ],
+   "aprendizajes": [
+    "Qué es una inteligencia artificial, con ejemplos de su día a día",
+    "Escribir instrucciones claras para que la IA entienda",
+    "Crear imágenes, cuentos y música con IA",
+    "Reglas para usarla seguro: datos personales, verdad y respeto"
+   ],
+   "proyectoFinal": "Un cuento ilustrado y una canción propios, que se presentan a la familia en la última clase.",
+   "requisitos": "Una computadora con internet, cámara y micrófono. Un adulto ayuda a entrar a la primera clase.",
+   "imagen": null,
+   "linea": null,
+   "destacado": true,
+   "orden": 100,
+   "grupos": [
+    {
+     "id": "respaldo-mi-primera-aventura-con-ia-1",
+     "ciclo": "Verano 2027 · Ciclo 1",
+     "inicio": "2027-01-05",
+     "fin": "2027-01-28",
+     "dias": [
+      "MAR",
+      "JUE"
+     ],
+     "horaInicio": "10:00",
+     "horaFin": "11:15",
+     "docente": null,
+     "cupoMaximo": 10,
+     "cuposLibres": 10,
+     "estado": "ABIERTO",
+     "aceptaInscripciones": true,
+     "plan": {
+      "moneda": "PEN",
+      "matricula": 50,
+      "cuotas": [
+       {
+        "monto": 135,
+        "vence": "2027-01-05"
+       },
+       {
+        "monto": 135,
+        "vence": "2027-01-16"
+       }
+      ],
+      "pagoCompleto": 288
+     }
+    },
+    {
+     "id": "respaldo-mi-primera-aventura-con-ia-2",
+     "ciclo": "Verano 2027 · Ciclo 3",
+     "inicio": "2027-03-06",
+     "fin": "2027-03-27",
+     "dias": [
+      "SAB"
+     ],
+     "horaInicio": "09:30",
+     "horaFin": "12:15",
+     "docente": null,
+     "cupoMaximo": 10,
+     "cuposLibres": 10,
+     "estado": "ABIERTO",
+     "aceptaInscripciones": true,
+     "plan": {
+      "moneda": "PEN",
+      "matricula": 50,
+      "cuotas": [
+       {
+        "monto": 135,
+        "vence": "2027-03-06"
+       },
+       {
+        "monto": 135,
+        "vence": "2027-03-16"
+       }
+      ],
+      "pagoCompleto": 288
+     }
+    }
+   ]
+  },
+  {
+   "slug": "programo-con-scratch",
+   "nombre": "Programo con Scratch",
+   "resumen": "Su primer videojuego programado por bloques: personajes, puntos, niveles y sonido.",
+   "descripcion": "Scratch es la puerta de entrada a la programación: se programa uniendo bloques, sin escribir código.\n\nEn ocho clases los niños aprenden secuencias, repeticiones, condiciones y variables mientras construyen su propio videojuego.",
+   "publico": "NINOS",
+   "tema": "PROGRAMACION",
+   "edadMin": 8,
+   "edadMax": 11,
+   "nivel": "Desde cero",
+   "clases": 8,
+   "minutosPorClase": 90,
+   "temario": [
+    {
+     "temas": [
+      "El escenario y los objetos",
+      "Mover y animar"
+     ],
+     "titulo": "Primeros pasos"
+    },
+    {
+     "temas": [
+      "Repeticiones",
+      "Si pasa esto, entonces…"
+     ],
+     "titulo": "Lógica"
+    },
+    {
+     "temas": [
+      "Puntos y vidas",
+      "Niveles y sonido"
+     ],
+     "titulo": "Mi juego"
+    },
+    {
+     "temas": [
+      "Probar y corregir",
+      "Compartir el proyecto"
+     ],
+     "titulo": "Publicar"
+    }
+   ],
+   "aprendizajes": [
+    "Pensar paso a paso como un programador",
+    "Secuencias, bucles, condiciones y variables",
+    "Animar personajes y escenarios",
+    "Publicar y compartir su juego"
+   ],
+   "proyectoFinal": "Un videojuego propio publicado en Scratch para jugar con la familia.",
+   "requisitos": "Una computadora con internet, cámara y micrófono. Un adulto ayuda a entrar a la primera clase.",
+   "imagen": null,
+   "linea": null,
+   "destacado": false,
+   "orden": 101,
+   "grupos": [
+    {
+     "id": "respaldo-programo-con-scratch-1",
+     "ciclo": "Verano 2027 · Ciclo 2",
+     "inicio": "2027-02-01",
+     "fin": "2027-02-24",
+     "dias": [
+      "LUN",
+      "MIE"
+     ],
+     "horaInicio": "10:00",
+     "horaFin": "11:30",
+     "docente": null,
+     "cupoMaximo": 10,
+     "cuposLibres": 10,
+     "estado": "ABIERTO",
+     "aceptaInscripciones": true,
+     "plan": {
+      "moneda": "PEN",
+      "matricula": 50,
+      "cuotas": [
+       {
+        "monto": 150,
+        "vence": "2027-02-01"
+       },
+       {
+        "monto": 150,
+        "vence": "2027-02-12"
+       }
+      ],
+      "pagoCompleto": 315
+     }
+    }
+   ]
+  },
+  {
+   "slug": "entreno-mi-primera-ia",
+   "nombre": "Entreno mi primera IA",
+   "resumen": "Entrenan un modelo que reconoce imágenes o sonidos y lo usan dentro de un juego de Scratch.",
+   "descripcion": "Los niños descubren cómo aprende una máquina: juntan ejemplos, entrenan un modelo con Teachable Machine y lo prueban.\n\nDespués lo conectan a un juego de Scratch que reacciona a sus gestos, a objetos o a su voz.",
+   "publico": "NINOS",
+   "tema": "IA",
+   "edadMin": 10,
+   "edadMax": 12,
+   "nivel": "Desde cero",
+   "clases": 8,
+   "minutosPorClase": 90,
+   "temario": [
+    {
+     "temas": [
+      "Ejemplos y etiquetas",
+      "Entrenar y probar"
+     ],
+     "titulo": "Máquinas que aprenden"
+    },
+    {
+     "temas": [
+      "Imágenes, poses o sonidos",
+      "Mejorar con más ejemplos"
+     ],
+     "titulo": "Mi modelo"
+    },
+    {
+     "temas": [
+      "Scratch + mi modelo",
+      "Reglas del juego"
+     ],
+     "titulo": "Mi juego inteligente"
+    },
+    {
+     "temas": [
+      "Sesgos: cuando la IA se equivoca",
+      "Presentación"
+     ],
+     "titulo": "Cierre"
+    }
+   ],
+   "aprendizajes": [
+    "Cómo aprende una IA a partir de ejemplos",
+    "Entrenar y probar un modelo propio",
+    "Por qué una IA se equivoca y cómo mejorarla",
+    "Unir su modelo a un juego"
+   ],
+   "proyectoFinal": "Un juego de Scratch que se controla con un modelo de IA entrenado por ellos.",
+   "requisitos": "Una computadora con internet, cámara y micrófono. Un adulto ayuda a entrar a la primera clase.",
+   "imagen": null,
+   "linea": null,
+   "destacado": false,
+   "orden": 102,
+   "grupos": [
+    {
+     "id": "respaldo-entreno-mi-primera-ia-1",
+     "ciclo": "Verano 2027 · Ciclo 2",
+     "inicio": "2027-02-02",
+     "fin": "2027-02-25",
+     "dias": [
+      "MAR",
+      "JUE"
+     ],
+     "horaInicio": "10:00",
+     "horaFin": "11:30",
+     "docente": null,
+     "cupoMaximo": 10,
+     "cuposLibres": 10,
+     "estado": "ABIERTO",
+     "aceptaInscripciones": true,
+     "plan": {
+      "moneda": "PEN",
+      "matricula": 50,
+      "cuotas": [
+       {
+        "monto": 150,
+        "vence": "2027-02-02"
+       },
+       {
+        "monto": 150,
+        "vence": "2027-02-13"
+       }
+      ],
+      "pagoCompleto": 315
+     }
+    }
+   ]
+  },
+  {
+   "slug": "crea-tu-videojuego-con-ia",
+   "nombre": "Crea tu videojuego con IA",
+   "resumen": "Un videojuego publicado, con personajes, fondos y música creados con inteligencia artificial.",
+   "descripcion": "Programan un juego completo y usan la IA como su equipo de arte: personajes, fondos, efectos y música.\n\nAprenden a pedirle a la IA lo que necesitan y a decidir qué usar, como lo hace un estudio de videojuegos.",
+   "publico": "NINOS",
+   "tema": "PROGRAMACION",
+   "edadMin": 10,
+   "edadMax": 13,
+   "nivel": "Desde cero",
+   "clases": 8,
+   "minutosPorClase": 90,
+   "temario": [
+    {
+     "temas": [
+      "Género y reglas",
+      "Boceto del juego"
+     ],
+     "titulo": "La idea"
+    },
+    {
+     "temas": [
+      "Movimiento y colisiones",
+      "Puntos y niveles"
+     ],
+     "titulo": "Programación"
+    },
+    {
+     "temas": [
+      "Personajes y fondos",
+      "Música y efectos"
+     ],
+     "titulo": "Arte con IA"
+    },
+    {
+     "temas": [
+      "Pruebas",
+      "Presentación final"
+     ],
+     "titulo": "Publicar"
+    }
+   ],
+   "aprendizajes": [
+    "Diseñar un juego: idea, reglas y niveles",
+    "Programarlo paso a paso",
+    "Crear el arte y la música con IA",
+    "Publicarlo para que otros lo jueguen"
+   ],
+   "proyectoFinal": "Su videojuego publicado, con arte y música creados con IA.",
+   "requisitos": "Una computadora con internet, cámara y micrófono. Un adulto ayuda a entrar a la primera clase.",
+   "imagen": null,
+   "linea": null,
+   "destacado": false,
+   "orden": 103,
+   "grupos": [
+    {
+     "id": "respaldo-crea-tu-videojuego-con-ia-1",
+     "ciclo": "Verano 2027 · Ciclo 1",
+     "inicio": "2027-01-04",
+     "fin": "2027-01-27",
+     "dias": [
+      "LUN",
+      "MIE"
+     ],
+     "horaInicio": "10:00",
+     "horaFin": "11:30",
+     "docente": null,
+     "cupoMaximo": 10,
+     "cuposLibres": 10,
+     "estado": "ABIERTO",
+     "aceptaInscripciones": true,
+     "plan": {
+      "moneda": "PEN",
+      "matricula": 50,
+      "cuotas": [
+       {
+        "monto": 150,
+        "vence": "2027-01-04"
+       },
+       {
+        "monto": 150,
+        "vence": "2027-01-15"
+       }
+      ],
+      "pagoCompleto": 315
+     }
+    }
+   ]
+  },
+  {
+   "slug": "ia-para-tus-estudios",
+   "nombre": "IA para tus estudios",
+   "resumen": "Estudiar, investigar, resumir y presentar mejor con IA, citando bien y sin copiar.",
+   "descripcion": "La IA puede ser el mejor compañero de estudio o una trampa. En este curso aprenden a usarla para entender, practicar y organizarse, no para que haga la tarea.\n\nTrabajan con sus propios cursos del colegio: arman resúmenes, fichas, exámenes de práctica y presentaciones, y aprenden a verificar fuentes y a citar.",
+   "publico": "ADOLESCENTES",
+   "tema": "IA",
+   "edadMin": 13,
+   "edadMax": 17,
+   "nivel": "Desde cero",
+   "clases": 8,
+   "minutosPorClase": 90,
+   "temario": [
+    {
+     "temas": [
+      "Preguntar bien",
+      "Explicar con mis palabras"
+     ],
+     "titulo": "La IA como tutor"
+    },
+    {
+     "temas": [
+      "Resúmenes y fichas",
+      "Exámenes de práctica"
+     ],
+     "titulo": "Estudiar"
+    },
+    {
+     "temas": [
+      "Fuentes confiables",
+      "Citar y no copiar"
+     ],
+     "titulo": "Investigar"
+    },
+    {
+     "temas": [
+      "Estructura e ideas",
+      "Diapositivas con IA"
+     ],
+     "titulo": "Presentar"
+    },
+    {
+     "temas": [
+      "Plan de estudio",
+      "Hábitos"
+     ],
+     "titulo": "Organizarme"
+    }
+   ],
+   "aprendizajes": [
+    "Usar ChatGPT, Claude y Gemini para entender un tema",
+    "Resúmenes, fichas y exámenes de práctica",
+    "Investigar y verificar fuentes, y citar bien",
+    "Presentaciones claras con ayuda de IA",
+    "Dónde está el límite: ayuda sí, copia no"
+   ],
+   "proyectoFinal": "Un kit de estudio para un curso real del colegio y una presentación hecha con su método.",
+   "requisitos": "Una computadora con internet, cámara y micrófono. No se necesita experiencia previa.",
+   "imagen": null,
+   "linea": null,
+   "destacado": true,
+   "orden": 204,
+   "grupos": [
+    {
+     "id": "respaldo-ia-para-tus-estudios-1",
+     "ciclo": "Verano 2027 · Ciclo 1",
+     "inicio": "2027-01-04",
+     "fin": "2027-01-27",
+     "dias": [
+      "LUN",
+      "MIE"
+     ],
+     "horaInicio": "16:00",
+     "horaFin": "17:30",
+     "docente": null,
+     "cupoMaximo": 12,
+     "cuposLibres": 12,
+     "estado": "ABIERTO",
+     "aceptaInscripciones": true,
+     "plan": {
+      "moneda": "PEN",
+      "matricula": 50,
+      "cuotas": [
+       {
+        "monto": 150,
+        "vence": "2027-01-04"
+       },
+       {
+        "monto": 150,
+        "vence": "2027-01-15"
+       }
+      ],
+      "pagoCompleto": 315
+     }
+    },
+    {
+     "id": "respaldo-ia-para-tus-estudios-2",
+     "ciclo": "Verano 2027 · Ciclo 3",
+     "inicio": "2027-03-06",
+     "fin": "2027-03-27",
+     "dias": [
+      "SAB"
+     ],
+     "horaInicio": "15:00",
+     "horaFin": "18:15",
+     "docente": null,
+     "cupoMaximo": 12,
+     "cuposLibres": 12,
+     "estado": "ABIERTO",
+     "aceptaInscripciones": true,
+     "plan": {
+      "moneda": "PEN",
+      "matricula": 50,
+      "cuotas": [
+       {
+        "monto": 150,
+        "vence": "2027-03-06"
+       },
+       {
+        "monto": 150,
+        "vence": "2027-03-16"
+       }
+      ],
+      "pagoCompleto": 315
+     }
+    }
+   ]
+  },
+  {
+   "slug": "python-e-ia-desde-cero",
+   "nombre": "Python e IA desde cero",
+   "resumen": "Programación con Python desde cero y un chatbot propio que usa una API de inteligencia artificial.",
+   "descripcion": "Python es el lenguaje de la inteligencia artificial. En doce clases aprenden a programar desde cero y terminan conectando su programa a una IA real.\n\nCada clase combina teoría corta y práctica, y cada alumno avanza su propio proyecto.",
+   "publico": "ADOLESCENTES",
+   "tema": "PROGRAMACION",
+   "edadMin": 13,
+   "edadMax": 17,
+   "nivel": "Desde cero",
+   "clases": 12,
+   "minutosPorClase": 90,
+   "temario": [
+    {
+     "temas": [
+      "Variables y tipos",
+      "Condiciones y bucles"
+     ],
+     "titulo": "Fundamentos"
+    },
+    {
+     "temas": [
+      "Funciones",
+      "Listas y diccionarios"
+     ],
+     "titulo": "Organizar el código"
+    },
+    {
+     "temas": [
+      "Archivos",
+      "Pequeños análisis"
+     ],
+     "titulo": "Datos"
+    },
+    {
+     "temas": [
+      "Qué es una API",
+      "Conversar con un modelo"
+     ],
+     "titulo": "IA desde Python"
+    },
+    {
+     "temas": [
+      "Personalidad y reglas",
+      "Presentación final"
+     ],
+     "titulo": "Mi chatbot"
+    }
+   ],
+   "aprendizajes": [
+    "Variables, condiciones, bucles y funciones",
+    "Listas, diccionarios y archivos",
+    "Usar una API de IA desde Python",
+    "Construir y mostrar un chatbot propio"
+   ],
+   "proyectoFinal": "Un chatbot propio hecho en Python que usa una API de IA.",
+   "requisitos": "Una computadora con internet, cámara y micrófono. No se necesita experiencia previa.",
+   "imagen": null,
+   "linea": null,
+   "destacado": true,
+   "orden": 205,
+   "grupos": [
+    {
+     "id": "respaldo-python-e-ia-desde-cero-1",
+     "ciclo": "Verano 2027 · Ciclo 1",
+     "inicio": "2027-01-04",
+     "fin": "2027-01-29",
+     "dias": [
+      "LUN",
+      "MIE",
+      "VIE"
+     ],
+     "horaInicio": "11:45",
+     "horaFin": "13:15",
+     "docente": null,
+     "cupoMaximo": 12,
+     "cuposLibres": 12,
+     "estado": "ABIERTO",
+     "aceptaInscripciones": true,
+     "plan": {
+      "moneda": "PEN",
+      "matricula": 50,
+      "cuotas": [
+       {
+        "monto": 150,
+        "vence": "2027-01-04"
+       },
+       {
+        "monto": 150,
+        "vence": "2027-01-12"
+       },
+       {
+        "monto": 150,
+        "vence": "2027-01-20"
+       }
+      ],
+      "pagoCompleto": 450
+     }
+    }
+   ]
+  },
+  {
+   "slug": "crea-tu-app-o-tu-web-con-ia",
+   "nombre": "Crea tu app o tu web con IA",
+   "resumen": "Una web o app publicada en internet, hecha con ayuda de inteligencia artificial.",
+   "descripcion": "Aprenden cómo se hace una web de verdad (HTML, CSS y JavaScript) y a trabajar con la IA como asistente de programación.\n\nTerminan con su proyecto publicado, con su propia dirección para compartirlo.",
+   "publico": "ADOLESCENTES",
+   "tema": "PROGRAMACION",
+   "edadMin": 14,
+   "edadMax": 17,
+   "nivel": "Desde cero",
+   "clases": 12,
+   "minutosPorClase": 90,
+   "temario": [
+    {
+     "temas": [
+      "HTML y CSS",
+      "Diseño adaptable"
+     ],
+     "titulo": "La web por dentro"
+    },
+    {
+     "temas": [
+      "JavaScript básico",
+      "Formularios"
+     ],
+     "titulo": "Interacción"
+    },
+    {
+     "temas": [
+      "Pedir, revisar y corregir",
+      "Buenas prácticas"
+     ],
+     "titulo": "Programar con IA"
+    },
+    {
+     "temas": [
+      "Subir la web",
+      "Presentación"
+     ],
+     "titulo": "Publicar"
+    }
+   ],
+   "aprendizajes": [
+    "Estructura y diseño de una web",
+    "Programar con un asistente de IA sin perder el control",
+    "Hacerla verse bien en el celular",
+    "Publicarla en internet"
+   ],
+   "proyectoFinal": "Su web o app publicada con su propia dirección.",
+   "requisitos": "Una computadora con internet, cámara y micrófono. No se necesita experiencia previa.",
+   "imagen": null,
+   "linea": null,
+   "destacado": false,
+   "orden": 206,
+   "grupos": [
+    {
+     "id": "respaldo-crea-tu-app-o-tu-web-con-ia-1",
+     "ciclo": "Verano 2027 · Ciclo 2",
+     "inicio": "2027-02-01",
+     "fin": "2027-02-26",
+     "dias": [
+      "LUN",
+      "MIE",
+      "VIE"
+     ],
+     "horaInicio": "11:45",
+     "horaFin": "13:15",
+     "docente": null,
+     "cupoMaximo": 12,
+     "cuposLibres": 12,
+     "estado": "ABIERTO",
+     "aceptaInscripciones": true,
+     "plan": {
+      "moneda": "PEN",
+      "matricula": 50,
+      "cuotas": [
+       {
+        "monto": 150,
+        "vence": "2027-02-01"
+       },
+       {
+        "monto": 150,
+        "vence": "2027-02-09"
+       },
+       {
+        "monto": 150,
+        "vence": "2027-02-17"
+       }
+      ],
+      "pagoCompleto": 450
+     }
+    }
+   ]
+  },
+  {
+   "slug": "emprende-con-ia",
+   "nombre": "Emprende con IA",
+   "resumen": "Una idea de negocio con marca, prototipo y contenido para redes hechos con inteligencia artificial.",
+   "descripcion": "De una idea a un proyecto que se puede mostrar: investigan su mercado, crean la marca, arman un prototipo y lo presentan.\n\nLa IA les sirve de socio para investigar, diseñar y escribir, mientras ellos toman las decisiones.",
+   "publico": "ADOLESCENTES",
+   "tema": "IA",
+   "edadMin": 14,
+   "edadMax": 17,
+   "nivel": "Desde cero",
+   "clases": 8,
+   "minutosPorClase": 90,
+   "temario": [
+    {
+     "temas": [
+      "Problemas reales",
+      "Propuesta de valor"
+     ],
+     "titulo": "La idea"
+    },
+    {
+     "temas": [
+      "Clientes",
+      "Competencia"
+     ],
+     "titulo": "Investigar"
+    },
+    {
+     "temas": [
+      "Nombre y logo",
+      "Contenido para redes"
+     ],
+     "titulo": "Marca"
+    },
+    {
+     "temas": [
+      "Prototipo",
+      "Presentación"
+     ],
+     "titulo": "Pitch"
+    }
+   ],
+   "aprendizajes": [
+    "Encontrar un problema y una idea",
+    "Investigar clientes y competencia con IA",
+    "Marca, logo y contenido con IA",
+    "Presentar su proyecto"
+   ],
+   "proyectoFinal": "La presentación de su emprendimiento con marca, prototipo y plan.",
+   "requisitos": "Una computadora con internet, cámara y micrófono. No se necesita experiencia previa.",
+   "imagen": null,
+   "linea": null,
+   "destacado": false,
+   "orden": 207,
+   "grupos": [
+    {
+     "id": "respaldo-emprende-con-ia-1",
+     "ciclo": "Verano 2027 · Ciclo 2",
+     "inicio": "2027-02-02",
+     "fin": "2027-02-25",
+     "dias": [
+      "MAR",
+      "JUE"
+     ],
+     "horaInicio": "16:00",
+     "horaFin": "17:30",
+     "docente": null,
+     "cupoMaximo": 12,
+     "cuposLibres": 12,
+     "estado": "ABIERTO",
+     "aceptaInscripciones": true,
+     "plan": {
+      "moneda": "PEN",
+      "matricula": 50,
+      "cuotas": [
+       {
+        "monto": 150,
+        "vence": "2027-02-02"
+       },
+       {
+        "monto": 150,
+        "vence": "2027-02-13"
+       }
+      ],
+      "pagoCompleto": 315
+     }
+    }
+   ]
+  },
+  {
+   "slug": "mi-dinero-con-ia",
+   "nombre": "Mi dinero con IA: finanzas para jóvenes",
+   "resumen": "Presupuesto, ahorro, primer sueldo, cuentas y tarjetas, y cómo evitar estafas, con la IA como asistente.",
+   "descripcion": "La educación financiera que no se enseña en el colegio, contada para jóvenes y con casos del Perú.\n\nUsan la IA para armar su presupuesto, simular ahorros y entender los productos financieros, y aprenden a reconocer estafas.",
+   "publico": "ADOLESCENTES",
+   "tema": "ECONOMIA",
+   "edadMin": 14,
+   "edadMax": 17,
+   "nivel": "Desde cero",
+   "clases": 8,
+   "minutosPorClase": 90,
+   "temario": [
+    {
+     "temas": [
+      "Ingresos y gastos",
+      "Presupuesto con IA"
+     ],
+     "titulo": "Mi dinero"
+    },
+    {
+     "temas": [
+      "Metas",
+      "Interés compuesto"
+     ],
+     "titulo": "Ahorrar"
+    },
+    {
+     "temas": [
+      "Cuentas y tarjetas",
+      "Créditos"
+     ],
+     "titulo": "El sistema financiero"
+    },
+    {
+     "temas": [
+      "Estafas",
+      "Mi plan financiero"
+     ],
+     "titulo": "Cuidarme"
+    }
+   ],
+   "aprendizajes": [
+    "Armar y seguir un presupuesto",
+    "Ahorro e interés compuesto",
+    "Cuentas, tarjetas y créditos sin sustos",
+    "Reconocer estafas y fraudes digitales"
+   ],
+   "proyectoFinal": "Su plan financiero personal con presupuesto y metas de ahorro.",
+   "requisitos": "Una computadora con internet, cámara y micrófono. No se necesita experiencia previa.",
+   "imagen": null,
+   "linea": "Economía y finanzas con IA",
+   "destacado": false,
+   "orden": 208,
+   "grupos": [
+    {
+     "id": "respaldo-mi-dinero-con-ia-1",
+     "ciclo": "Verano 2027 · Ciclo 2",
+     "inicio": "2027-02-02",
+     "fin": "2027-02-25",
+     "dias": [
+      "MAR",
+      "JUE"
+     ],
+     "horaInicio": "11:45",
+     "horaFin": "13:15",
+     "docente": null,
+     "cupoMaximo": 12,
+     "cuposLibres": 12,
+     "estado": "ABIERTO",
+     "aceptaInscripciones": true,
+     "plan": {
+      "moneda": "PEN",
+      "matricula": 50,
+      "cuotas": [
+       {
+        "monto": 150,
+        "vence": "2027-02-02"
+       },
+       {
+        "monto": 150,
+        "vence": "2027-02-13"
+       }
+      ],
+      "pagoCompleto": 315
+     }
+    }
+   ]
+  },
+  {
+   "slug": "ia-para-tu-negocio-y-marketing",
+   "nombre": "IA para tu negocio y marketing",
+   "resumen": "Contenido, redes, anuncios, atención por WhatsApp y ventas con inteligencia artificial.",
+   "descripcion": "Para emprendedores y pymes que quieren vender más con menos tiempo.\n\nCreas el contenido de un mes, mejoras tus anuncios y tus respuestas a clientes, y armas un calendario de marketing con IA.",
+   "publico": "ADULTOS",
+   "tema": "IA",
+   "edadMin": 18,
+   "edadMax": null,
+   "nivel": "Desde cero",
+   "clases": 8,
+   "minutosPorClase": 120,
+   "temario": [
+    {
+     "temas": [
+      "Cliente ideal",
+      "Mensaje de marca"
+     ],
+     "titulo": "Estrategia"
+    },
+    {
+     "temas": [
+      "Textos",
+      "Imágenes y video"
+     ],
+     "titulo": "Contenido"
+    },
+    {
+     "temas": [
+      "Anuncios",
+      "Atención por WhatsApp"
+     ],
+     "titulo": "Ventas"
+    },
+    {
+     "temas": [
+      "Calendario del mes",
+      "Medir resultados"
+     ],
+     "titulo": "Plan"
+    }
+   ],
+   "aprendizajes": [
+    "Contenido para redes en lote",
+    "Imágenes y videos cortos con IA",
+    "Anuncios y textos que venden",
+    "Atención por WhatsApp más rápida",
+    "Calendario de marketing del mes"
+   ],
+   "proyectoFinal": "El plan y el contenido de un mes para tu negocio.",
+   "requisitos": "Una computadora con internet, cámara y micrófono. No se necesita experiencia previa.",
+   "imagen": null,
+   "linea": null,
+   "destacado": false,
+   "orden": 310,
+   "grupos": [
+    {
+     "id": "respaldo-ia-para-tu-negocio-y-marketing-1",
+     "ciclo": "Verano 2027 · Ciclo 2",
+     "inicio": "2027-02-02",
+     "fin": "2027-02-25",
+     "dias": [
+      "MAR",
+      "JUE"
+     ],
+     "horaInicio": "19:30",
+     "horaFin": "21:30",
+     "docente": null,
+     "cupoMaximo": 20,
+     "cuposLibres": 20,
+     "estado": "ABIERTO",
+     "aceptaInscripciones": true,
+     "plan": {
+      "moneda": "PEN",
+      "matricula": 50,
+      "cuotas": [
+       {
+        "monto": 200,
+        "vence": "2027-02-02"
+       },
+       {
+        "monto": 200,
+        "vence": "2027-02-13"
+       }
+      ],
+      "pagoCompleto": 405
+     }
+    }
+   ]
+  },
+  {
+   "slug": "excel-y-datos-con-ia",
+   "nombre": "Excel y datos con IA",
+   "resumen": "Fórmulas, tablas, gráficos y análisis de datos con ayuda de inteligencia artificial.",
+   "descripcion": "Para quien trabaja con hojas de cálculo: la IA te explica y te escribe fórmulas, te ayuda a limpiar datos y a sacar conclusiones.\n\nTrabajas con casos de oficina, finanzas y ventas.",
+   "publico": "ADULTOS",
+   "tema": "IA",
+   "edadMin": 18,
+   "edadMax": null,
+   "nivel": "Desde cero",
+   "clases": 8,
+   "minutosPorClase": 120,
+   "temario": [
+    {
+     "temas": [
+      "Fórmulas explicadas",
+      "Errores comunes"
+     ],
+     "titulo": "Excel con IA"
+    },
+    {
+     "temas": [
+      "Limpieza",
+      "Tablas dinámicas"
+     ],
+     "titulo": "Datos"
+    },
+    {
+     "temas": [
+      "Gráficos",
+      "Tableros simples"
+     ],
+     "titulo": "Visualizar"
+    },
+    {
+     "temas": [
+      "Conclusiones con IA",
+      "Presentar resultados"
+     ],
+     "titulo": "Analizar"
+    }
+   ],
+   "aprendizajes": [
+    "Fórmulas con ayuda de IA",
+    "Limpiar y ordenar datos",
+    "Tablas dinámicas y gráficos",
+    "Analizar y presentar resultados"
+   ],
+   "proyectoFinal": "Un tablero con análisis de datos reales de tu trabajo o de un caso.",
+   "requisitos": "Una computadora con internet, cámara y micrófono. No se necesita experiencia previa.",
+   "imagen": null,
+   "linea": null,
+   "destacado": false,
+   "orden": 311,
+   "grupos": [
+    {
+     "id": "respaldo-excel-y-datos-con-ia-1",
+     "ciclo": "Verano 2027 · Ciclo 2",
+     "inicio": "2027-02-01",
+     "fin": "2027-02-24",
+     "dias": [
+      "LUN",
+      "MIE"
+     ],
+     "horaInicio": "19:30",
+     "horaFin": "21:30",
+     "docente": null,
+     "cupoMaximo": 20,
+     "cuposLibres": 20,
+     "estado": "ABIERTO",
+     "aceptaInscripciones": true,
+     "plan": {
+      "moneda": "PEN",
+      "matricula": 50,
+      "cuotas": [
+       {
+        "monto": 200,
+        "vence": "2027-02-01"
+       },
+       {
+        "monto": 200,
+        "vence": "2027-02-12"
+       }
+      ],
+      "pagoCompleto": 405
+     }
+    }
+   ]
+  },
+  {
+   "slug": "ia-para-docentes",
+   "nombre": "IA para docentes",
+   "resumen": "Planificar, crear material y evaluar con IA, y enseñar a los alumnos a usarla bien.",
+   "descripcion": "Pensado para profesores de colegio, academia o universidad, justo antes de empezar el año escolar.\n\nSales con sesiones, materiales y rúbricas listas, y con una guía para hablar de IA con tus alumnos.",
+   "publico": "ADULTOS",
+   "tema": "IA",
+   "edadMin": 18,
+   "edadMax": null,
+   "nivel": "Desde cero",
+   "clases": 6,
+   "minutosPorClase": 120,
+   "temario": [
+    {
+     "temas": [
+      "Sesiones",
+      "Unidades"
+     ],
+     "titulo": "Planificar"
+    },
+    {
+     "temas": [
+      "Fichas y actividades",
+      "Presentaciones"
+     ],
+     "titulo": "Material"
+    },
+    {
+     "temas": [
+      "Rúbricas",
+      "Retroalimentación"
+     ],
+     "titulo": "Evaluar"
+    },
+    {
+     "temas": [
+      "Uso responsable",
+      "Mi política de IA"
+     ],
+     "titulo": "En el aula"
+    }
+   ],
+   "aprendizajes": [
+    "Planificar sesiones y unidades con IA",
+    "Crear material y actividades",
+    "Evaluar con rúbricas",
+    "Política de uso de IA para tu clase"
+   ],
+   "proyectoFinal": "Una unidad completa con materiales y evaluación hecha con IA.",
+   "requisitos": "Una computadora con internet, cámara y micrófono. No se necesita experiencia previa.",
+   "imagen": null,
+   "linea": null,
+   "destacado": false,
+   "orden": 312,
+   "grupos": [
+    {
+     "id": "respaldo-ia-para-docentes-1",
+     "ciclo": "Verano 2027 · Ciclo 2",
+     "inicio": "2027-02-08",
+     "fin": "2027-02-24",
+     "dias": [
+      "LUN",
+      "MIE"
+     ],
+     "horaInicio": "17:00",
+     "horaFin": "19:00",
+     "docente": null,
+     "cupoMaximo": 20,
+     "cuposLibres": 20,
+     "estado": "ABIERTO",
+     "aceptaInscripciones": true,
+     "plan": {
+      "moneda": "PEN",
+      "matricula": 50,
+      "cuotas": [
+       {
+        "monto": 150,
+        "vence": "2027-02-08"
+       },
+       {
+        "monto": 150,
+        "vence": "2027-02-16"
+       }
+      ],
+      "pagoCompleto": 315
+     }
+    }
+   ]
+  },
+  {
+   "slug": "automatiza-con-ia",
+   "nombre": "Automatiza con IA: agentes y flujos",
+   "resumen": "Flujos que responden, ordenan datos y avisan solos (n8n o Make), y tu primer agente de IA.",
+   "descripcion": "Deja que las tareas repetitivas se hagan solas. Conectas tus herramientas (correo, hojas de cálculo, formularios, WhatsApp) y les sumas IA.\n\nTerminas con automatizaciones funcionando para tu trabajo y un primer agente.",
+   "publico": "ADULTOS",
+   "tema": "IA",
+   "edadMin": 18,
+   "edadMax": null,
+   "nivel": "Desde cero",
+   "clases": 10,
+   "minutosPorClase": 120,
+   "temario": [
+    {
+     "temas": [
+      "Qué automatizar",
+      "Disparadores y pasos"
+     ],
+     "titulo": "Procesos"
+    },
+    {
+     "temas": [
+      "n8n o Make",
+      "Conectar herramientas"
+     ],
+     "titulo": "Flujos"
+    },
+    {
+     "temas": [
+      "Clasificar y resumir",
+      "Responder"
+     ],
+     "titulo": "IA en el flujo"
+    },
+    {
+     "temas": [
+      "Qué es un agente",
+      "Mi primer agente"
+     ],
+     "titulo": "Agentes"
+    }
+   ],
+   "aprendizajes": [
+    "Pensar en procesos automatizables",
+    "Flujos con n8n o Make",
+    "Sumar IA a un flujo",
+    "Construir un agente simple"
+   ],
+   "proyectoFinal": "Dos automatizaciones funcionando para tu trabajo y un agente de IA.",
+   "requisitos": "Una computadora con internet, cámara y micrófono. No se necesita experiencia previa.",
+   "imagen": null,
+   "linea": null,
+   "destacado": false,
+   "orden": 313,
+   "grupos": [
+    {
+     "id": "respaldo-automatiza-con-ia-1",
+     "ciclo": "Verano 2027 · Ciclo 1",
+     "inicio": "2027-01-04",
+     "fin": "2027-01-25",
+     "dias": [
+      "LUN",
+      "MIE",
+      "VIE"
+     ],
+     "horaInicio": "19:30",
+     "horaFin": "21:30",
+     "docente": null,
+     "cupoMaximo": 20,
+     "cuposLibres": 20,
+     "estado": "ABIERTO",
+     "aceptaInscripciones": true,
+     "plan": {
+      "moneda": "PEN",
+      "matricula": 50,
+      "cuotas": [
+       {
+        "monto": 200,
+        "vence": "2027-01-04"
+       },
+       {
+        "monto": 200,
+        "vence": "2027-01-11"
+       },
+       {
+        "monto": 200,
+        "vence": "2027-01-18"
+       }
+      ],
+      "pagoCompleto": 585
+     }
+    }
+   ]
+  },
+  {
+   "slug": "crea-apps-y-webs-con-ia",
+   "nombre": "Crea apps y webs con IA (sin ser programador)",
+   "resumen": "Una web o herramienta interna publicada, hecha con inteligencia artificial y sin experiencia previa.",
+   "descripcion": "Para emprendedores y profesionales que quieren construir su propia herramienta sin depender de nadie.\n\nAprendes a describir lo que necesitas, a construirlo con herramientas de IA y a publicarlo.",
+   "publico": "ADULTOS",
+   "tema": "PROGRAMACION",
+   "edadMin": 18,
+   "edadMax": null,
+   "nivel": "Desde cero",
+   "clases": 10,
+   "minutosPorClase": 120,
+   "temario": [
+    {
+     "temas": [
+      "Problema y usuarios",
+      "Especificación"
+     ],
+     "titulo": "La idea"
+    },
+    {
+     "temas": [
+      "Herramientas de IA",
+      "Pantallas y datos"
+     ],
+     "titulo": "Construir"
+    },
+    {
+     "temas": [
+      "Pruebas",
+      "Diseño"
+     ],
+     "titulo": "Mejorar"
+    },
+    {
+     "temas": [
+      "Dominio",
+      "Mantenimiento"
+     ],
+     "titulo": "Publicar"
+    }
+   ],
+   "aprendizajes": [
+    "Convertir una idea en especificación",
+    "Construir con herramientas de IA",
+    "Datos y formularios",
+    "Publicar y mantener"
+   ],
+   "proyectoFinal": "Tu web o herramienta interna publicada.",
+   "requisitos": "Una computadora con internet, cámara y micrófono. No se necesita experiencia previa.",
+   "imagen": null,
+   "linea": null,
+   "destacado": false,
+   "orden": 314,
+   "grupos": [
+    {
+     "id": "respaldo-crea-apps-y-webs-con-ia-1",
+     "ciclo": "Verano 2027 · Ciclo 3",
+     "inicio": "2027-03-01",
+     "fin": "2027-03-31",
+     "dias": [
+      "LUN",
+      "MIE"
+     ],
+     "horaInicio": "19:30",
+     "horaFin": "21:30",
+     "docente": null,
+     "cupoMaximo": 20,
+     "cuposLibres": 20,
+     "estado": "ABIERTO",
+     "aceptaInscripciones": true,
+     "plan": {
+      "moneda": "PEN",
+      "matricula": 50,
+      "cuotas": [
+       {
+        "monto": 200,
+        "vence": "2027-03-01"
+       },
+       {
+        "monto": 200,
+        "vence": "2027-03-11"
+       },
+       {
+        "monto": 200,
+        "vence": "2027-03-21"
+       }
+      ],
+      "pagoCompleto": 585
+     }
+    }
+   ]
+  },
+  {
+   "slug": "python-desde-cero",
+   "nombre": "Python desde cero",
+   "resumen": "Lógica de programación, Python y automatizaciones útiles para tu trabajo.",
+   "descripcion": "El lenguaje más usado del mundo, explicado desde cero para adultos.\n\nTerminas automatizando tareas reales: archivos, hojas de cálculo y datos.",
+   "publico": "ADULTOS",
+   "tema": "PROGRAMACION",
+   "edadMin": 18,
+   "edadMax": null,
+   "nivel": "Desde cero",
+   "clases": 12,
+   "minutosPorClase": 120,
+   "temario": [
+    {
+     "temas": [
+      "Variables y condiciones",
+      "Bucles y funciones"
+     ],
+     "titulo": "Fundamentos"
+    },
+    {
+     "temas": [
+      "Listas y diccionarios",
+      "Archivos"
+     ],
+     "titulo": "Datos"
+    },
+    {
+     "temas": [
+      "Excel",
+      "Tareas del día a día"
+     ],
+     "titulo": "Automatizar"
+    },
+    {
+     "temas": [
+      "Datos",
+      "IA"
+     ],
+     "titulo": "Siguiente paso"
+    }
+   ],
+   "aprendizajes": [
+    "Lógica de programación",
+    "Python: datos, funciones y archivos",
+    "Automatizar Excel y archivos",
+    "Bases para seguir en datos o IA"
+   ],
+   "proyectoFinal": "Un programa que automatiza una tarea real de tu trabajo.",
+   "requisitos": "Una computadora con internet, cámara y micrófono. No se necesita experiencia previa.",
+   "imagen": null,
+   "linea": null,
+   "destacado": false,
+   "orden": 315,
+   "grupos": []
+  },
+  {
+   "slug": "desarrollo-con-ia-para-programadores",
+   "nombre": "Desarrollo con IA para programadores",
+   "resumen": "APIs de IA, RAG y agentes en una aplicación real: lo que más pide el mercado.",
+   "descripcion": "Para programadores que quieren sumar IA a sus productos. Según LinkedIn, ingeniería de IA es la habilidad que más crece.\n\nConstruyes una aplicación real con un modelo de lenguaje, búsqueda en tus documentos (RAG) y herramientas.",
+   "publico": "ADULTOS",
+   "tema": "PROGRAMACION",
+   "edadMin": 18,
+   "edadMax": null,
+   "nivel": "Intermedio",
+   "clases": 12,
+   "minutosPorClase": 120,
+   "temario": [
+    {
+     "temas": [
+      "APIs y parámetros",
+      "Salidas estructuradas"
+     ],
+     "titulo": "Modelos"
+    },
+    {
+     "temas": [
+      "Embeddings",
+      "Búsqueda y contexto"
+     ],
+     "titulo": "RAG"
+    },
+    {
+     "temas": [
+      "Herramientas",
+      "Flujos"
+     ],
+     "titulo": "Agentes"
+    },
+    {
+     "temas": [
+      "Evaluación",
+      "Costos y seguridad"
+     ],
+     "titulo": "Producción"
+    }
+   ],
+   "aprendizajes": [
+    "Usar APIs de modelos de lenguaje",
+    "RAG: respuestas con tus documentos",
+    "Herramientas y agentes",
+    "Evaluar, cuidar costos y seguridad"
+   ],
+   "proyectoFinal": "Una aplicación con IA, RAG y una herramienta propia, desplegada.",
+   "requisitos": "Saber programar en JavaScript o Python.",
+   "imagen": null,
+   "linea": null,
+   "destacado": false,
+   "orden": 316,
+   "grupos": []
+  },
+  {
+   "slug": "finanzas-personales-con-ia",
+   "nombre": "Finanzas personales con IA",
+   "resumen": "Tu presupuesto, tu plan de deudas y ahorro, y los primeros pasos para invertir, armados con IA.",
+   "descripcion": "Ordena tu dinero con método y con la IA como asistente.\n\nArmas tu presupuesto, un plan para salir de deudas, metas de ahorro y entiendes las opciones para invertir en el Perú.",
+   "publico": "ADULTOS",
+   "tema": "ECONOMIA",
+   "edadMin": 18,
+   "edadMax": null,
+   "nivel": "Desde cero",
+   "clases": 6,
+   "minutosPorClase": 120,
+   "temario": [
+    {
+     "temas": [
+      "Ingresos y gastos",
+      "Presupuesto con IA"
+     ],
+     "titulo": "Mi situación"
+    },
+    {
+     "temas": [
+      "Priorizar",
+      "Plan de pago"
+     ],
+     "titulo": "Deudas"
+    },
+    {
+     "temas": [
+      "Metas",
+      "Fondo de emergencia"
+     ],
+     "titulo": "Ahorro"
+    },
+    {
+     "temas": [
+      "Opciones en el Perú",
+      "Riesgo y plazo"
+     ],
+     "titulo": "Invertir"
+    }
+   ],
+   "aprendizajes": [
+    "Presupuesto real",
+    "Plan para deudas",
+    "Ahorro y fondo de emergencia",
+    "Primeros pasos para invertir"
+   ],
+   "proyectoFinal": "Tu plan financiero personal de 12 meses.",
+   "requisitos": "Una computadora con internet, cámara y micrófono. No se necesita experiencia previa.",
+   "imagen": null,
+   "linea": "Economía y finanzas con IA",
+   "destacado": false,
+   "orden": 317,
+   "grupos": [
+    {
+     "id": "respaldo-finanzas-personales-con-ia-1",
+     "ciclo": "Verano 2027 · Ciclo 2",
+     "inicio": "2027-02-06",
+     "fin": "2027-02-20",
+     "dias": [
+      "SAB"
+     ],
+     "horaInicio": "09:30",
+     "horaFin": "13:45",
+     "docente": null,
+     "cupoMaximo": 20,
+     "cuposLibres": 20,
+     "estado": "ABIERTO",
+     "aceptaInscripciones": true,
+     "plan": {
+      "moneda": "PEN",
+      "matricula": 50,
+      "cuotas": [
+       {
+        "monto": 150,
+        "vence": "2027-02-06"
+       },
+       {
+        "monto": 150,
+        "vence": "2027-02-13"
+       }
+      ],
+      "pagoCompleto": 315
+     }
+    }
+   ]
+  },
+  {
+   "slug": "finanzas-para-tu-negocio-con-ia",
+   "nombre": "Finanzas para tu negocio con IA",
+   "resumen": "Costos, precios, flujo de caja y proyecciones de tu negocio en Excel con IA.",
+   "descripcion": "Para emprendedores y pymes: los números de tu negocio, claros.\n\nCalculas tus costos y precios, armas tu flujo de caja y proyectas escenarios con la ayuda de la IA.",
+   "publico": "ADULTOS",
+   "tema": "ECONOMIA",
+   "edadMin": 18,
+   "edadMax": null,
+   "nivel": "Desde cero",
+   "clases": 8,
+   "minutosPorClase": 120,
+   "temario": [
+    {
+     "temas": [
+      "Fijos y variables",
+      "Punto de equilibrio"
+     ],
+     "titulo": "Costos"
+    },
+    {
+     "temas": [
+      "Margen",
+      "Competencia"
+     ],
+     "titulo": "Precios"
+    },
+    {
+     "temas": [
+      "Flujo de caja",
+      "Capital de trabajo"
+     ],
+     "titulo": "Caja"
+    },
+    {
+     "temas": [
+      "Proyecciones",
+      "Escenarios"
+     ],
+     "titulo": "Futuro"
+    }
+   ],
+   "aprendizajes": [
+    "Costos fijos y variables",
+    "Fijar precios con margen",
+    "Flujo de caja",
+    "Proyecciones y escenarios"
+   ],
+   "proyectoFinal": "El modelo financiero de tu negocio en Excel.",
+   "requisitos": "Una computadora con internet, cámara y micrófono. No se necesita experiencia previa.",
+   "imagen": null,
+   "linea": "Economía y finanzas con IA",
+   "destacado": false,
+   "orden": 318,
+   "grupos": []
+  },
+  {
+   "slug": "analisis-economico-y-financiero-con-ia",
+   "nombre": "Análisis económico y financiero con IA",
+   "resumen": "Reportes, indicadores y escenarios con Excel, IA y datos económicos reales del Perú (BCRP, INEI).",
+   "descripcion": "Para profesionales de finanzas, contabilidad y administración.\n\nTrabajas con datos públicos del BCRP y del INEI, construyes indicadores y reportes, y usas la IA para analizar y comunicar.",
+   "publico": "ADULTOS",
+   "tema": "ECONOMIA",
+   "edadMin": 18,
+   "edadMax": null,
+   "nivel": "Intermedio",
+   "clases": 10,
+   "minutosPorClase": 120,
+   "temario": [
+    {
+     "temas": [
+      "BCRP e INEI",
+      "Limpieza"
+     ],
+     "titulo": "Datos"
+    },
+    {
+     "temas": [
+      "Liquidez y rentabilidad",
+      "Macro"
+     ],
+     "titulo": "Indicadores"
+    },
+    {
+     "temas": [
+      "Sensibilidad",
+      "Proyecciones"
+     ],
+     "titulo": "Escenarios"
+    },
+    {
+     "temas": [
+      "Reportes",
+      "Presentación"
+     ],
+     "titulo": "Comunicar"
+    }
+   ],
+   "aprendizajes": [
+    "Fuentes de datos económicos del Perú",
+    "Indicadores financieros",
+    "Escenarios y sensibilidad",
+    "Reportes claros con IA"
+   ],
+   "proyectoFinal": "Un reporte económico-financiero con escenarios sobre datos reales.",
+   "requisitos": "Manejo básico de Excel.",
+   "imagen": null,
+   "linea": "Economía y finanzas con IA",
+   "destacado": false,
+   "orden": 319,
+   "grupos": []
+  }
+ ]
+}

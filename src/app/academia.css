@@ -1,0 +1,141 @@
+/* Piezas propias de la academia. Solo los tokens de globals.css: ningun color ni radio nuevo. */
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.pastilla { display: inline-flex; width: fit-content; padding: 4px 12px; border-radius: 999px; background: var(--mist); color: var(--indigo); font-size: 13.5px; font-weight: 500; line-height: 1.4; }
+.panel-mist .pastilla { background: #fff; }
+.panel-ink .pastilla { background: rgba(255, 255, 255, 0.1); color: #fff; }
+.subtitulo { font-size: 1.6rem; letter-spacing: -0.03em; margin-bottom: 18px; }
+.devi-hero { width: min(330px, 70vw); height: auto; }
+.escena-hero .vidrio img { flex: none; }
+
+/* Tarjetas del catalogo */
+.rejilla-cursos { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); }
+.tarjeta-curso { display: flex; flex-direction: column; gap: 12px; padding: 22px; border-radius: var(--r-panel); background: #fff; border: 1px solid var(--mist-line); color: var(--ink); text-decoration: none; transition: transform 300ms var(--ease), border-color 200ms, box-shadow 300ms; min-width: 0; }
+.tarjeta-curso:hover { transform: translateY(-3px); border-color: var(--periwinkle); box-shadow: 0 24px 48px -32px rgba(17, 12, 41, 0.45); }
+.tarjeta-curso h3 { font-size: 1.4rem; letter-spacing: -0.03em; }
+.tc-cab { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+.tc-devi { width: 58px; height: auto; margin: -6px -6px 0 0; }
+.tc-resumen { font-size: 15px; }
+.tc-datos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: auto 0 0; padding-top: 14px; border-top: 1px solid var(--mist-line); }
+.tc-datos dt { font-size: 12.5px; color: color-mix(in srgb, var(--ink) 58%, transparent); }
+.tc-datos dd { margin: 2px 0 0; font-size: 14.5px; font-weight: 500; line-height: 1.3; }
+.tc-ver { color: var(--indigo); font-weight: 500; font-size: 15px; }
+
+/* Rutas por edad */
+.ruta-edad { display: grid; grid-template-rows: auto 1fr auto; gap: 16px; padding: 24px; border-radius: var(--r-panel); background: var(--mist); color: var(--ink); text-decoration: none; transition: transform 300ms var(--ease), background 200ms; }
+.ruta-edad:hover { transform: translateY(-3px); background: var(--band); }
+.ruta-edad img { width: 110px; height: auto; }
+.ruta-edad h3 { font-size: 1.8rem; letter-spacing: -0.035em; margin: 10px 0 6px; }
+
+/* Ciclos del verano */
+.ciclos { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.ciclo { display: grid; gap: 8px; padding: 22px; border-radius: var(--r-card); background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); }
+.ciclo-n { color: var(--periwinkle); font-size: 14px; }
+.ciclo b { font-weight: 500; font-size: 1.35rem; letter-spacing: -0.02em; }
+.rejilla-como { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+/* Filtros del catalogo: enlaces (se pueden compartir) con el aspecto del segmentado */
+.filtros { display: grid; gap: 10px; }
+.seg-enlaces { display: flex; flex-wrap: wrap; gap: 6px; }
+.seg-enlaces a { padding: 9px 16px; border-radius: 999px; border: 1px solid var(--mist-line); background: #fff; color: var(--ink); text-decoration: none; font-size: 15px; transition: background 200ms, color 200ms, border-color 200ms; }
+.seg-enlaces a:hover { border-color: var(--periwinkle); }
+.seg-enlaces a[aria-current="true"] { background: var(--indigo); border-color: var(--indigo); color: #fff; }
+.seg-enlaces a[aria-current="true"] .blando { color: rgba(255, 255, 255, 0.75); }
+.vacio { display: grid; justify-items: center; gap: 12px; padding: 40px 20px; text-align: center; border-radius: var(--r-panel); background: #fff; }
+.panel-paper .vacio { background: var(--mist); }
+
+/* Cabecera de pagina con una columna aparte (datos del curso) */
+.cab-con-aparte { display: grid; gap: 32px; }
+@media (min-width: 980px) { .cab-con-aparte { grid-template-columns: 1.4fr 0.6fr; align-items: end; } }
+.cab-texto { display: grid; gap: 18px; }
+.ficha-datos { display: grid; gap: 14px; margin: 0; padding: 22px; border-radius: var(--r-card); background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.14); }
+.ficha-datos dt { font-size: 13px; color: var(--ink-muted); }
+.ficha-datos dd { margin: 2px 0 0; font-size: 16px; }
+.ficha-precio { font-size: 2rem !important; letter-spacing: -0.04em; }
+
+/* Ficha del curso */
+.ficha { display: grid; gap: 40px; }
+@media (min-width: 980px) { .ficha { grid-template-columns: 1.5fr 0.8fr; align-items: start; } .ficha-lateral { position: sticky; top: 104px; } }
+.ficha-principal { display: grid; gap: 48px; min-width: 0; }
+.ficha-lateral { display: grid; gap: 12px; }
+.temario { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.temario li { display: grid; grid-template-columns: auto 1fr; gap: 16px; align-items: start; padding: 16px 18px; border-radius: var(--r-card); background: var(--mist); }
+.temario h3 { margin-bottom: 4px; }
+.temario p { font-size: 15px; }
+.lista-checks { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; font-size: 16px; }
+.lista-checks li { position: relative; padding-left: 26px; }
+.lista-checks li::before { content: ""; position: absolute; left: 0; top: 0.42em; width: 12px; height: 12px; border-radius: 4px; background: var(--indigo); }
+.paso-n { display: grid; place-items: center; width: 40px; height: 40px; border-radius: var(--r-tile); background: var(--indigo); color: #fff; font-size: 14px; font-variant-numeric: tabular-nums; }
+
+/* Grupos de un curso */
+.grupos { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+.grupo { display: flex; flex-direction: column; gap: 10px; padding: 22px; border-radius: var(--r-panel); background: #fff; border: 1px solid var(--mist-line); }
+.grupo h3 { font-size: 1.35rem; letter-spacing: -0.03em; }
+.grupo-cab { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; }
+.grupo-horario { font-size: 16px; }
+.grupo-horario::first-letter { text-transform: uppercase; }
+.grupo-docente { font-size: 14px; }
+.cupos { font-size: 13.5px; color: var(--indigo); font-weight: 500; }
+.cupos-pocos { color: #b4235a; }
+.cupos-cerrado { color: color-mix(in srgb, var(--ink) 55%, transparent); }
+.grupo-precio { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 6px 0 8px; }
+.grupo-precio > div { display: grid; gap: 2px; padding: 12px 14px; border-radius: var(--r-card); background: var(--mist); }
+.grupo-completo { background: var(--band) !important; }
+.grupo-precio dt { font-size: 13px; }
+.grupo-precio dd { margin: 0; font-size: 1.5rem; font-weight: 500; letter-spacing: -0.035em; }
+.grupo-precio span { font-size: 12.5px; line-height: 1.35; }
+.grupo .btn { margin-top: auto; align-self: flex-start; }
+
+/* Paginas de texto */
+.legal { max-width: 78ch; }
+.legal h2 { font-size: 1.5rem; letter-spacing: -0.03em; margin-top: 18px; }
+.legal ul { margin: 0; padding-left: 1.2em; display: grid; gap: 8px; }
+.pasos-grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); list-style: none; margin: 0; padding: 0; }
+.pasos-grid li { display: grid; grid-template-columns: auto 1fr; gap: 16px; align-items: start; padding: 20px; border-radius: var(--r-card); background: var(--mist); }
+.pasos-grid h3 { margin-bottom: 4px; }
+.apilado-chico { display: grid; gap: 10px; }
+.precio-grande { font-size: 2.6rem; font-weight: 500; letter-spacing: -0.045em; line-height: 1.05; }
+.precio-grande span { font-size: 15px; letter-spacing: 0; font-weight: 400; }
+.docentes { display: grid; gap: 12px; }
+@media (min-width: 900px) { .docentes { grid-template-columns: 1fr 1fr; } }
+.docente { display: grid; gap: 20px; padding: 24px; border-radius: var(--r-panel); background: var(--mist); }
+@media (min-width: 560px) { .docente { grid-template-columns: auto 1fr; align-items: center; } }
+.docente-vista { display: grid; place-items: center; width: 200px; height: 200px; border-radius: var(--r-card); background: radial-gradient(closest-side, rgba(91, 83, 208, 0.55), transparent 85%), var(--ink); }
+.docente-vista img { width: 170px; height: auto; }
+.docente-texto { display: grid; gap: 10px; }
+.docente-texto h2 { font-size: 2rem; letter-spacing: -0.035em; }
+.no-encontrado { display: grid; justify-items: start; gap: 18px; }
+
+/* Formulario de inscripcion */
+.form-ins { display: grid; gap: 14px; max-width: 880px; }
+.bloque { display: grid; gap: 16px; margin: 0; padding: 24px; border: 0; border-radius: var(--r-panel); background: #fff; min-width: 0; }
+.bloque legend { float: left; width: 100%; margin-bottom: 4px; font-size: 1.35rem; font-weight: 500; letter-spacing: -0.03em; }
+.bloque legend + * { clear: both; }
+.dos-campos { display: grid; gap: 14px; }
+@media (min-width: 640px) { .dos-campos { grid-template-columns: 1fr 1fr; } }
+.campo input, .campo select { width: 100%; font: inherit; font-size: 16px; padding: 12px 14px; border-radius: 10px; border: 1px solid var(--mist-line); background: #fff; color: var(--ink); }
+.campo input:focus, .campo select:focus { outline: 3px solid color-mix(in srgb, var(--indigo) 35%, transparent); border-color: var(--indigo); }
+.opciones { display: grid; gap: 8px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.opcion { display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: start; padding: 14px 16px; border-radius: var(--r-card); border: 1px solid var(--mist-line); cursor: pointer; transition: border-color 200ms, background 200ms; }
+.opcion:hover { border-color: var(--periwinkle); }
+.opcion.activa { border-color: var(--indigo); background: color-mix(in srgb, var(--indigo) 6%, #fff); }
+.opcion input { margin-top: 4px; accent-color: var(--indigo); width: 18px; height: 18px; }
+.opcion > span { display: grid; gap: 2px; font-size: 15px; }
+.opcion b { font-weight: 500; font-size: 16px; }
+.nota { font-size: 14.5px; color: color-mix(in srgb, var(--ink) 68%, transparent); }
+.check { align-items: flex-start; }
+.check input { margin-top: 3px; flex: none; }
+.error { padding: 14px 18px; border-radius: var(--r-card); background: #fdecef; color: #8a1538; font-size: 15px; }
+.form-ins .btn[disabled] { opacity: 0.6; cursor: wait; }
+.listo { display: grid; justify-items: start; gap: 18px; max-width: 760px; padding: 32px; border-radius: var(--r-panel); background: #fff; }
+
+/* Devi flotante con WhatsApp */
+.flotante { position: fixed; right: 16px; bottom: 16px; z-index: 40; display: flex; align-items: center; gap: 8px; text-decoration: none; color: var(--ink); }
+.flotante-burbuja { display: none; padding: 10px 14px; border-radius: var(--r-card); background: var(--ink); color: #fff; font-size: 13.5px; line-height: 1.3; box-shadow: 0 16px 40px -16px rgba(17, 12, 41, 0.6); }
+.flotante-burbuja b { display: block; font-weight: 500; }
+.flotante-burbuja span { color: var(--ink-muted); }
+@media (min-width: 720px) { .flotante-burbuja { display: block; } }
+.flotante-devi { position: relative; display: block; width: 64px; height: 64px; overflow: hidden; filter: drop-shadow(0 8px 14px rgba(17, 12, 41, 0.35)); transition: transform 300ms var(--ease); }
+.flotante-devi img { position: absolute; width: 84px; height: auto; left: -10px; top: -9px; max-width: none; }
+.flotante:hover .flotante-devi { transform: translateY(-3px) rotate(-6deg); }
+.flotante-devi::after { content: "WhatsApp"; position: absolute; right: -2px; top: 0; padding: 2px 5px; border-radius: 5px; background: #25d366; color: #fff; font-size: 8px; font-weight: 600; }
+@media print { .flotante, .cabecera { display: none; } }
