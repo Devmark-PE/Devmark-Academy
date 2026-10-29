@@ -5,6 +5,7 @@
   "description": "academy.devmarkpe.com: el sitio de DEVMARK Academy. Sin base de datos: lee el catalogo y envia las inscripciones a la API del ERP.",
   "scripts": {
     "dev": "next dev -p 3400",
+    "dev:local": "node scripts/dev-local.mjs",
     "build": "next build && node scripts/empaquetar-standalone.mjs",
     "start": "node .next/standalone/server.js",
     "lint": "eslint . --max-warnings=0",

@@ -30,7 +30,8 @@ adolescentes y adultos. Diseño y plan completos en el ERP: `Devmark-PE/ERP-Devm
 
 ```bash
 npm install
-npm run dev        # http://localhost:3400
+npm run dev:local  # http://localhost:3400 contra el ERP local (encender antes "npm run dev:local" en ERP-Devmark)
+npm run dev        # http://localhost:3400 con las variables de .env.local
 npm run lint
 npm run typecheck
 npm run build      # build standalone + estáticos copiados (para Hostinger)
