@@ -93,3 +93,24 @@ export async function obtenerDocentes(): Promise<DocentePublico[] | null> {
     return null;
   }
 }
+
+// ---------------------------------------------------------------------------------------- chat con Devi ---
+
+const baseChat = `${API}/api/v1/publico/sitios/${SITIO}/conversaciones`;
+
+/** Una llamada al chat del sitio en el ERP (la IA responde con la voz de Devi). null si la API no responde. */
+export async function chatErp<T>(ruta: string, opciones: { metodo?: "GET" | "POST"; cuerpo?: unknown; ip: string | null; visitante?: string }): Promise<{ estado: number; datos: T } | null> {
+  try {
+    const r = await fetch(`${baseChat}${ruta}`, {
+      method: opciones.metodo ?? "POST",
+      headers: cabeceras({ ...(opciones.cuerpo ? { "content-type": "application/json" } : {}), ...(opciones.ip ? { "x-cliente-ip": opciones.ip } : {}), ...(opciones.visitante ? { "x-visitante": opciones.visitante } : {}) }),
+      body: opciones.cuerpo ? JSON.stringify(opciones.cuerpo) : undefined,
+      cache: "no-store",
+      signal: AbortSignal.timeout(25000),
+    });
+    return { estado: r.status, datos: (await r.json().catch(() => ({}))) as T };
+  } catch (e) {
+    console.error("[academia] chat:", e instanceof Error ? e.message : e);
+    return null;
+  }
+}

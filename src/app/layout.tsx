@@ -3,7 +3,8 @@ import { Instrument_Serif, Schibsted_Grotesk } from "next/font/google";
 import { Cabecera } from "@/components/Cabecera";
 import { Pie } from "@/components/Pie";
 import { JsonLd } from "@/components/JsonLd";
-import { WhatsAppFlotante } from "@/components/WhatsAppFlotante";
+import { ChatDevi } from "@/components/chat/ChatDevi";
+import { WHATSAPP_CONSULTA } from "@/lib/datos";
 import { CONTACTO, REDES, URL_BASE, WEB } from "@/lib/datos";
 import "./globals.css";
 import "./academia.css";
@@ -73,7 +74,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <Cabecera />
         <main>{children}</main>
         <Pie />
-        <WhatsAppFlotante />
+        <ChatDevi whatsapp={WHATSAPP_CONSULTA} />
       </body>
     </html>
   );
