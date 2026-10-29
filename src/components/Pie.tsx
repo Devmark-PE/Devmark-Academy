@@ -5,6 +5,8 @@ import { IconoMarca, WhatsAppIcono } from "./iconos-marca";
 const LEGALES = [
   { href: "/terminos/", nombre: "Términos y condiciones" },
   { href: "/privacidad/", nombre: "Privacidad y datos de menores" },
+  { href: "/certificado/", nombre: "Verificar un certificado" },
+  { href: "https://portal.devmarkpe.com", nombre: "Portal de alumnos y familias" },
 ] as const;
 
 const DEVMARK = [

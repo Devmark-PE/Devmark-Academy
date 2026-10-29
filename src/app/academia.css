@@ -139,3 +139,17 @@
 .flotante:hover .flotante-devi { transform: translateY(-3px) rotate(-6deg); }
 .flotante-devi::after { content: "WhatsApp"; position: absolute; right: -2px; top: 0; padding: 2px 5px; border-radius: 5px; background: #25d366; color: #fff; font-size: 8px; font-weight: 600; }
 @media print { .flotante, .cabecera { display: none; } }
+
+/* Verificacion de certificados */
+.verificar { display: grid; gap: 10px; max-width: 560px; }
+.verificar label { font-weight: 500; }
+.verificar-fila { display: flex; gap: 8px; flex-wrap: wrap; }
+.verificar-fila input { flex: 1 1 240px; min-height: 48px; padding: 0 14px; border-radius: var(--r-btn); border: 1px solid var(--mist-line); font: inherit; letter-spacing: 0.06em; text-transform: uppercase; }
+.certificado-ficha { max-width: 640px; display: grid; gap: 20px; padding: 28px; border-radius: var(--r-panel); background: var(--mist); border-left: 6px solid var(--indigo); }
+.certificado-ficha.anulado { border-left-color: var(--ink-muted); }
+.certificado-ficha dl { margin: 0; display: grid; gap: 14px; }
+.certificado-ficha dt { font-size: 14px; color: color-mix(in srgb, var(--ink) 60%, transparent); }
+.certificado-ficha dd { margin: 0; font-size: 1.15rem; }
+.certificado-ficha .pastilla { background: #fff; }
+.docente-foto { width: 200px; height: 200px; border-radius: var(--r-card); object-fit: cover; }
+.docente-cursos { display: flex; flex-wrap: wrap; gap: 6px; font-size: 14px; }

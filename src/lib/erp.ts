@@ -63,3 +63,33 @@ export async function registrarInscripcion(cuerpo: Record<string, unknown>, ipCl
     return { ok: false, error: "No pudimos registrar tu inscripción.", caida: true };
   }
 }
+
+export type CertificadoVerificado = { codigo: string; alumno: string; curso: string; horas: number; notaFinal: number | null; emitidoEn: string; vigente: boolean; anuladoEn: string | null };
+
+/** Verifica un certificado por su codigo. "caida": la API no respondio (no es lo mismo que no existir). */
+export async function verificarCertificado(codigo: string): Promise<{ estado: "ok"; datos: CertificadoVerificado } | { estado: "no-existe" | "caida" }> {
+  if (!/^DMA-\d{4}-[2-9A-Z]{6}$/.test(codigo)) return { estado: "no-existe" };
+  try {
+    const r = await fetch(`${base}/certificados/${codigo}`, { headers: cabeceras(), next: { revalidate: 60 }, signal: AbortSignal.timeout(8000) });
+    if (r.status === 404) return { estado: "no-existe" };
+    if (!r.ok) throw new Error(`API ${r.status}`);
+    return { estado: "ok", datos: (await r.json()) as CertificadoVerificado };
+  } catch (e) {
+    console.error("[academia] verificar certificado:", e instanceof Error ? e.message : e);
+    return { estado: "caida" };
+  }
+}
+
+export type DocentePublico = { nombre: string; especialidad: string | null; bio: string | null; foto: string | null; cursos: { slug: string; nombre: string }[] };
+
+/** Docentes que la administracion publico desde el ERP (perfil que llena cada docente). null si la API no responde. */
+export async function obtenerDocentes(): Promise<DocentePublico[] | null> {
+  try {
+    const r = await fetch(`${base}/docentes`, { headers: cabeceras(), next: { revalidate: 300 }, signal: AbortSignal.timeout(8000) });
+    if (!r.ok) throw new Error(`API ${r.status}`);
+    return ((await r.json()) as { docentes: DocentePublico[] }).docentes;
+  } catch (e) {
+    console.error("[academia] docentes:", e instanceof Error ? e.message : e);
+    return null;
+  }
+}
