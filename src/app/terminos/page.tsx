@@ -4,7 +4,7 @@ import { CONTACTO, WEB } from "@/lib/datos";
 
 export const metadata: Metadata = {
   title: "Términos y condiciones",
-  description: "Términos de inscripción, pago y participación en los cursos de DEVMARK Academy.",
+  description: "Términos de inscripción, pago, cuotas y participación en los cursos online de DEVMARK Academy: lo que debes saber antes de matricularte.",
   alternates: { canonical: "/terminos/" },
 };
 

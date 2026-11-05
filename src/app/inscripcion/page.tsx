@@ -5,7 +5,7 @@ import Formulario from "./Formulario";
 
 export const metadata: Metadata = {
   title: "Inscripción",
-  description: "Inscríbete en un curso de DEVMARK Academy. Al enviar, coordinamos el pago contigo por WhatsApp.",
+  description: "Inscríbete en un curso online en vivo de IA y programación de DEVMARK Academy. Envías tus datos y coordinamos el pago contigo por WhatsApp.",
   alternates: { canonical: "/inscripcion/" },
 };
 

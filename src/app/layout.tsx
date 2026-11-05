@@ -33,7 +33,8 @@ export const metadata: Metadata = {
     siteName: "DEVMARK Academy",
     locale: "es_PE",
     type: "website",
-    images: [{ url: "/marca/academia/devmarkacademy-logotipo.png", alt: "DEVMARK Academy" }],
+    // PNG fijo en public (con trailingSlash, una ruta opengraph-image responde 308 y algunos rastreadores no la siguen).
+    images: [{ url: "/marca/academia/og-academy.png", width: 1200, height: 630, alt: "DEVMARK Academy · Educación con IA" }],
   },
 };
 
