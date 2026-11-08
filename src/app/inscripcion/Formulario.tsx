@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useMemo, useState, useTransition } from "react";
 import { WhatsAppIcono } from "@/components/iconos-marca";
 import { MAYORIA_DE_EDAD, NOMBRE_PUBLICO, edadEn, fechaLarga, formatoPrecio, hoyEnLima, textoDias, totalEnCuotas, type Curso, type FormaPago } from "@/lib/academia";
-import { inscribir, type ResultadoInscripcion } from "./acciones";
+import { adjuntarVoucher, inscribir, type ResultadoInscripcion } from "./acciones";
 
 const PARENTESCOS = ["Madre", "Padre", "Abuela o abuelo", "Tía o tío", "Otro apoderado"];
 const ORIGENES = ["Instagram", "Facebook", "TikTok", "Google", "Un amigo o familiar", "El colegio", "devmarkpe.com", "Otro"];
@@ -21,6 +21,7 @@ export default function Formulario({ cursos, cursoInicial, grupoInicial }: { cur
   const [clave] = useState(() => crypto.randomUUID());
   const [error, setError] = useState<string | null>(null);
   const [listo, setListo] = useState<ResultadoInscripcion | null>(null);
+  const [voucherEnviado, setVoucherEnviado] = useState(false);
   const [enviando, iniciar] = useTransition();
   const hoy = hoyEnLima();
   const edad = nacimiento ? edadEn(nacimiento, hoy) : null;
@@ -54,6 +55,18 @@ export default function Formulario({ cursos, cursoInicial, grupoInicial }: { cur
         aceptaTerminos: f.get("acepta") === "on",
       });
       if (r.ok || r.caida) {
+        // El voucher va aparte y es opcional: si falla, la inscripcion ya quedo y se sigue por WhatsApp.
+        const archivo = f.get("voucher");
+        const operacion = v("operacion");
+        if (r.ok && ((archivo instanceof File && archivo.size > 0) || operacion)) {
+          const pago = new FormData();
+          pago.set("claveIdempotencia", clave);
+          if (archivo instanceof File && archivo.size > 0) pago.set("voucher", archivo);
+          if (v("medio")) pago.set("medio", v("medio"));
+          if (operacion) pago.set("operacion", operacion);
+          const p = await adjuntarVoucher(pago);
+          setVoucherEnviado(p.ok);
+        }
         setListo(r);
         window.scrollTo({ top: 0, behavior: "smooth" });
         // Se abre en otra pestana; si el navegador la bloquea (paso tras esperar a la API), se va directo a WhatsApp.
@@ -72,7 +85,9 @@ export default function Formulario({ cursos, cursoInicial, grupoInicial }: { cur
         <h2 className="headline">{listo.ok ? <>¡Listo! Tu código es <em>{listo.codigo}</em></> : <>Casi listo: <em>envíanos el WhatsApp</em></>}</h2>
         <p className="lead blando">
           {listo.ok
-            ? "Recibimos tu inscripción. Se abrió WhatsApp con todos tus datos: envía el mensaje y te respondemos con los medios de pago."
+            ? voucherEnviado
+              ? "Recibimos tu inscripción y tu voucher. El equipo los revisa y aprueba tu matrícula; si todo está bien, te llega el acceso al portal. Se abrió WhatsApp por si quieres escribirnos."
+              : "Recibimos tu inscripción. Se abrió WhatsApp con todos tus datos: envía el mensaje y te respondemos con los medios de pago."
             : "Nuestro sistema no respondió, pero no pierdes nada: se abrió WhatsApp con todos tus datos. Envía el mensaje y seguimos por ahí."}
         </p>
         <div className="fila">
@@ -252,6 +267,28 @@ export default function Formulario({ cursos, cursoInicial, grupoInicial }: { cur
           <label className="campo">
             <span>Comentario (opcional)</span>
             <input name="comentario" maxLength={1000} placeholder="Algo que debamos saber" />
+          </label>
+        </div>
+        <p className="nota">¿Ya pagaste? Adjunta tu voucher (captura de Yape, Plin o transferencia): es opcional, también puedes enviarlo por WhatsApp.</p>
+        <div className="dos-campos">
+          <label className="campo">
+            <span>Voucher (imagen o PDF, hasta 5 MB)</span>
+            <input name="voucher" type="file" accept=".png,.jpg,.jpeg,.webp,.pdf" />
+          </label>
+          <label className="campo">
+            <span>Medio de pago</span>
+            <select name="medio" defaultValue="">
+              <option value="">Sin indicar</option>
+              <option value="YAPE">Yape</option>
+              <option value="PLIN">Plin</option>
+              <option value="TRANSFERENCIA">Transferencia</option>
+              <option value="DEPOSITO">Depósito</option>
+              <option value="OTRO">Otro</option>
+            </select>
+          </label>
+          <label className="campo">
+            <span>N.º de operación</span>
+            <input name="operacion" maxLength={120} autoComplete="off" />
           </label>
         </div>
         <label className="check">

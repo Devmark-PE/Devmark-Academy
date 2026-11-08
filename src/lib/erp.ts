@@ -64,6 +64,26 @@ export async function registrarInscripcion(cuerpo: Record<string, unknown>, ipCl
   }
 }
 
+/** Adjunta el voucher (imagen o PDF) y el pago informado a una inscripcion recien enviada, por su clave de idempotencia. */
+export async function enviarVoucher(datos: FormData, ipCliente: string | null): Promise<{ ok: true } | { ok: false; error: string }> {
+  try {
+    const r = await fetch(`${base}/inscripciones/voucher`, {
+      method: "POST",
+      // Sin content-type: fetch pone el suyo, con el limite del multipart.
+      headers: cabeceras(ipCliente ? { "x-cliente-ip": ipCliente } : undefined),
+      body: datos,
+      cache: "no-store",
+      signal: AbortSignal.timeout(30000),
+    });
+    if (r.ok) return { ok: true };
+    const json = (await r.json().catch(() => ({}))) as { message?: string | string[] };
+    const mensaje = Array.isArray(json.message) ? json.message.join(" ") : json.message;
+    return { ok: false, error: r.status < 500 && mensaje ? mensaje : "No pudimos guardar el voucher." };
+  } catch {
+    return { ok: false, error: "No pudimos guardar el voucher." };
+  }
+}
+
 export type CertificadoVerificado = { codigo: string; alumno: string; curso: string; horas: number; notaFinal: number | null; emitidoEn: string; vigente: boolean; anuladoEn: string | null };
 
 /** Verifica un certificado por su codigo. "caida": la API no respondio (no es lo mismo que no existir). */

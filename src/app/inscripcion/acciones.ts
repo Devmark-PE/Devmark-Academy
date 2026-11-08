@@ -2,13 +2,28 @@
 
 import { headers } from "next/headers";
 import { enlaceWhatsapp, hoyEnLima, mensajeWhatsapp, type DatosInscripcion } from "@/lib/academia";
-import { obtenerCurso, registrarInscripcion } from "@/lib/erp";
+import { enviarVoucher, obtenerCurso, registrarInscripcion } from "@/lib/erp";
 
 export type ResultadoInscripcion =
   | { ok: true; codigo: string; enlace: string }
   /** La API no respondio: la inscripcion sigue por WhatsApp con todos los datos (sin codigo). */
   | { ok: false; caida: true; error: string; enlace: string }
   | { ok: false; caida: false; error: string };
+
+/**
+ * El voucher es opcional y va aparte de la inscripcion: si falla, la inscripcion ya quedo y se sigue por WhatsApp.
+ * El ERP reconoce la inscripcion por la misma clave con la que se creo.
+ */
+export async function adjuntarVoucher(datos: FormData): Promise<{ ok: true } | { ok: false; error: string }> {
+  const clave = String(datos.get("claveIdempotencia") ?? "");
+  if (!/^[A-Za-z0-9_-]{8,80}$/.test(clave)) return { ok: false, error: "No pudimos guardar el voucher." };
+  const archivo = datos.get("voucher");
+  if (archivo instanceof File && archivo.size > 5 * 1024 * 1024) return { ok: false, error: "El voucher pesa más de 5 MB." };
+  if (archivo instanceof File && archivo.size === 0) datos.delete("voucher");
+  const h = await headers();
+  const ip = h.get("x-forwarded-for")?.split(",")[0]?.trim() || h.get("x-real-ip") || null;
+  return enviarVoucher(datos, ip);
+}
 
 const texto = (v: unknown, max: number) => (typeof v === "string" ? v.trim().slice(0, max) : undefined) || undefined;
 
