@@ -127,6 +127,10 @@ export type DatosInscripcion = {
   formaPago: FormaPago;
   alumnoNombre: string;
   alumnoFechaNacimiento: string;
+  /** DNI, carne de extranjeria o pasaporte: siempre, sea mayor o menor. */
+  alumnoDni?: string;
+  /** Opcional: F o M, solo para estadisticas. */
+  alumnoSexo?: "F" | "M";
   alumnoCorreo?: string;
   alumnoTelefono?: string;
   apoderadoNombre?: string;
@@ -154,7 +158,7 @@ export function mensajeWhatsapp(d: DatosInscripcion, curso: Curso | null, grupo:
       }`,
     );
   } else l.push(`*Forma de pago:* ${d.formaPago === "COMPLETO" ? "pago completo" : "matrícula y cuotas"}`);
-  l.push("", `*Alumno:* ${d.alumnoNombre.trim()}${edad !== null ? `, ${edad} años` : ""}`);
+  l.push("", `*Alumno:* ${d.alumnoNombre.trim()}${edad !== null ? `, ${edad} años` : ""}${d.alumnoDni ? `, DNI ${d.alumnoDni.trim()}` : ""}`);
   if (menor) {
     l.push(`*Apoderado:* ${d.apoderadoNombre?.trim() ?? ""}${d.parentesco ? ` (${d.parentesco.trim()})` : ""}, DNI ${d.apoderadoDni?.trim() ?? ""}`);
     l.push(`*WhatsApp:* ${d.apoderadoTelefono?.trim() ?? ""} · *Correo:* ${d.apoderadoCorreo?.trim() ?? ""}`);

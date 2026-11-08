@@ -23,6 +23,8 @@ export async function inscribir(entrada: DatosInscripcion & { claveIdempotencia:
     formaPago: entrada.formaPago === "COMPLETO" ? "COMPLETO" : "CUOTAS",
     alumnoNombre: texto(entrada.alumnoNombre, 120) ?? "",
     alumnoFechaNacimiento: texto(entrada.alumnoFechaNacimiento, 10) ?? "",
+    alumnoDni: texto(entrada.alumnoDni, 12),
+    alumnoSexo: entrada.alumnoSexo === "F" || entrada.alumnoSexo === "M" ? entrada.alumnoSexo : undefined,
     alumnoCorreo: texto(entrada.alumnoCorreo, 160),
     alumnoTelefono: texto(entrada.alumnoTelefono, 30),
     apoderadoNombre: texto(entrada.apoderadoNombre, 120),

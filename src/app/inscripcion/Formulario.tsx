@@ -40,6 +40,8 @@ export default function Formulario({ cursos, cursoInicial, grupoInicial }: { cur
         formaPago: forma,
         alumnoNombre: v("alumnoNombre"),
         alumnoFechaNacimiento: nacimiento,
+        alumnoDni: v("alumnoDni"),
+        alumnoSexo: v("alumnoSexo") === "F" || v("alumnoSexo") === "M" ? (v("alumnoSexo") as "F" | "M") : undefined,
         alumnoCorreo: menor ? undefined : v("alumnoCorreo"),
         alumnoTelefono: menor ? undefined : v("alumnoTelefono"),
         apoderadoNombre: menor ? v("apoderadoNombre") : undefined,
@@ -165,6 +167,20 @@ export default function Formulario({ cursos, cursoInicial, grupoInicial }: { cur
           <label className="campo">
             <span>Fecha de nacimiento</span>
             <input type="date" required value={nacimiento} max={hoy} onChange={(e) => setNacimiento(e.target.value)} />
+          </label>
+        </div>
+        <div className="dos-campos">
+          <label className="campo">
+            <span>DNI o documento del alumno</span>
+            <input name="alumnoDni" required pattern="[0-9]{8}|[A-Za-z0-9]{9,12}" title="DNI de 8 dígitos o carné de 9 a 12 caracteres" autoComplete="off" />
+          </label>
+          <label className="campo">
+            <span>Sexo (opcional)</span>
+            <select name="alumnoSexo" defaultValue="">
+              <option value="">Prefiero no indicarlo</option>
+              <option value="F">Femenino</option>
+              <option value="M">Masculino</option>
+            </select>
           </label>
         </div>
         {edad !== null && (
