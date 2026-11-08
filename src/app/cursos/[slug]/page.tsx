@@ -44,7 +44,8 @@ export default async function FichaCurso({ params }: { params: Promise<{ slug: s
           inLanguage: "es",
           educationalLevel: c.nivel ?? undefined,
           provider: { "@type": "EducationalOrganization", name: "DEVMARK Academy", sameAs: URL_BASE },
-          hasCourseInstance: c.grupos.map((g) => ({ "@type": "CourseInstance", courseMode: "Online", startDate: g.inicio, endDate: g.fin, instructor: g.docente ? { "@type": "Person", name: g.docente } : undefined })),
+          // Sin grupos no hay instancias: un arreglo vacio no sirve para los resultados enriquecidos.
+          hasCourseInstance: c.grupos.length ? c.grupos.map((g) => ({ "@type": "CourseInstance", courseMode: "Online", startDate: g.inicio, endDate: g.fin, instructor: g.docente ? { "@type": "Person", name: g.docente } : undefined })) : undefined,
           offers: plan ? { "@type": "Offer", price: plan.pagoCompleto, priceCurrency: plan.moneda, category: "Paid", availability: abiertos.length ? "https://schema.org/InStock" : "https://schema.org/PreOrder" } : undefined,
         }}
       />
